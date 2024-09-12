@@ -1,0 +1,73 @@
+{
+    "editor.renderWhitespace": "all",// 显示空格
+    "editor.suggestSelection":"first", // 显示建议
+    "editor.fontSize": 15,
+    "editor.fontFamily":"'Fira Code',Monaco, Menlo, 'Courier New', monospace", // 字体
+    "editor.fontLigatures": true, // 启用连字
+    "editor.tabSize": 8,// 制表符长度
+    "editor.insertSpaces": false,// TAB不插入空格
+    "editor.codeActionsOnSave":{
+        "source.fixAll.eslint": true,
+    }, // 保存时的行为
+    "editor.largeFileOptimizations": false,
+    "editor.renderControlCharacters": true,
+    "editor.semanticHighlighting.enabled": true,
+    "editor.inlineSuggest.enabled": true,
+    "editor.semanticTokenColorCustomizations": {
+        "enabled": true,
+        "rules": {
+            // 函数参数
+            "parameter": "#306b72",
+            // 类或者结构体
+            "class" : {
+                "foreground": "#729de3",
+                "fontStyle": "bold"
+            },
+            // 普通函数
+            "function": {
+                "foreground": "#d8fb2a",
+                "fontStyle": "bold"
+            },
+            // 临时变量
+            "variable": "#26cdca",
+            // enum
+            "enum": "#397797",
+            "enumMember": "#397797",
+            // 宏
+            "macro": {
+                "foreground": "#8f5daf",
+                "fontStyle": "bold",
+            },
+            // 成员函数
+            "method": {
+                "foreground": "#e5b124",
+                "fontStyle": "bold"
+            },
+            // comment
+            "comment": "#6a9955",
+            // 命名空间
+            "namespace": {
+                "foreground": "#00d780",
+                "fontStyle": "bold"
+            },
+            // 只读变量加粗
+            "*.readonly": {
+                "fontStyle": "bold"
+            },
+            // 只读变量等效为宏
+            "variable.readonly": {
+                "foreground": "#e590ef",
+                "fontStyle": "bold"
+            },
+            // 静态变量/函数
+            "*.static": {
+                "fontStyle": "italic"
+            },
+            "property": {
+                "foreground": "#7ca6b7",
+                "fontStyle": "bold"
+            },
+        }
+    },
+
+}
